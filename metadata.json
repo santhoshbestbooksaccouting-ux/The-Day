@@ -1,0 +1,6 @@
+{
+  "name": "Romantic Birthday Experience - Happy Birthday My Girl",
+  "description": "An interactive multi-page romantic birthday journey with envelope wax seal, balloon popping, interactive candle blowing, heartfelt love letter, and dancing teddy bears.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
