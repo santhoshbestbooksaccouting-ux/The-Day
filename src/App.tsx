@@ -7,9 +7,33 @@ import { Page4BlowCandle } from './components/pages/Page4BlowCandle';
 import { Page5RoseBouquet } from './components/pages/Page5RoseBouquet';
 import { Page6HeartfeltLetter } from './components/pages/Page6HeartfeltLetter';
 import { Page7FinalGift } from './components/pages/Page7FinalGift';
+import envelopeImg from './assets/images/envelope_optimized.webp';
+import smallTeddyImg from './assets/images/small_teddy_bear_optimized.webp';
+import bearsWithCakeImg from './assets/images/bears_with_cake_optimized.webp';
+import cakeImg from './assets/images/cake_isolated_optimized.webp';
+import roseBouquetImg from './assets/images/rose_bouquet_optimized.webp';
+import giftBoxImg from './assets/images/gift_box_optimized.webp';
+import twoBearsChocImg from './assets/images/two_bears_choc_optimized.webp';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<number>(1);
+
+  // Preload all optimized images on mount so navigation is instant with zero lag
+  useEffect(() => {
+    const imagesToPreload = [
+      envelopeImg,
+      smallTeddyImg,
+      bearsWithCakeImg,
+      cakeImg,
+      roseBouquetImg,
+      giftBoxImg,
+      twoBearsChocImg,
+    ];
+    imagesToPreload.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
 
   // Sync with URL hash if provided (e.g. #page-3)
   useEffect(() => {

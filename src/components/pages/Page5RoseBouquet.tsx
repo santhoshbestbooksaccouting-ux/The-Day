@@ -1,7 +1,7 @@
 import React from 'react';
 import { TransparentCutout } from '../TransparentCutout';
 import { sounds } from '../../utils/sound';
-import roseBouquetImg from '../../assets/images/isolated_rose_bouquet_1791977739709.jpg';
+import roseBouquetImg from '../../assets/images/rose_bouquet_optimized.webp';
 
 interface Page5Props {
   onNext: () => void;

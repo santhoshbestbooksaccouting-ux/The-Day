@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
 import { sounds } from '../../utils/sound';
-import envelopeImg from '../../assets/images/original_envelope_wax_1791972443498.jpg';
-import smallTeddyImg from '../../assets/images/small_teddy_bear_1791976008160.jpg';
+import envelopeImg from '../../assets/images/envelope_optimized.webp';
+import smallTeddyImg from '../../assets/images/small_teddy_bear_optimized.webp';
 
 interface Page1Props {
   onNext: () => void;

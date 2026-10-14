@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
 import { TransparentCutout } from '../TransparentCutout';
 import { sounds } from '../../utils/sound';
-import giftBoxImg from '../../assets/images/birthday_gift_box_1791971664109.jpg';
-import twoBearsChocImg from '../../assets/images/real_two_bears_choc_1791978835972.jpg';
+import giftBoxImg from '../../assets/images/gift_box_optimized.webp';
+import twoBearsChocImg from '../../assets/images/two_bears_choc_optimized.webp';
 
 interface Page7Props {
   onRestart: () => void;

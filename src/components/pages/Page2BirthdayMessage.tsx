@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
 import { TransparentCutout } from '../TransparentCutout';
 import { sounds } from '../../utils/sound';
-import bearsWithCakeImg from '../../assets/images/bears_with_cake_nobg_1791976608371.jpg';
+import bearsWithCakeImg from '../../assets/images/bears_with_cake_optimized.webp';
 
 interface Page2Props {
   onNext: () => void;
