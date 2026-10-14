@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
 import { TransparentCutout } from '../TransparentCutout';
 import { sounds } from '../../utils/sound';
+import bearsWithCakeImg from '../../assets/images/bears_with_cake_nobg_1791976608371.jpg';
 
 interface Page2Props {
   onNext: () => void;
@@ -56,7 +57,7 @@ export const Page2BirthdayMessage: React.FC<Page2Props> = ({ onNext }) => {
         {/* Real Teddy Bears with Cake - 100% Transparent Cutout */}
         <div className="relative w-full aspect-[4/3] flex items-center justify-center">
           <TransparentCutout
-            src="/src/assets/images/bears_with_cake_nobg_1791976608371.jpg"
+            src={bearsWithCakeImg}
             alt="Real plush teddy bears with birthday cake and candle"
             className="w-full h-full object-contain filter drop-shadow-md select-none transform hover:scale-105 transition-transform duration-300"
             threshold={235}

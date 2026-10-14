@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
 import { TransparentCutout } from '../TransparentCutout';
 import { sounds } from '../../utils/sound';
+import cakeImg from '../../assets/images/cake_isolated_nobg_1791976609112.jpg';
 
 interface Page4Props {
   onNext: () => void;
@@ -56,7 +57,7 @@ export const Page4BlowCandle: React.FC<Page4Props> = ({ onNext }) => {
         >
           {/* Transparent Cake Cutout (Zero white background) */}
           <TransparentCutout
-            src="/src/assets/images/cake_isolated_nobg_1791976609112.jpg"
+            src={cakeImg}
             alt="Real luxury milk-rose birthday cake with candle"
             className="w-full h-full object-contain filter drop-shadow-xl transform group-hover:scale-105 active:scale-95 transition-transform duration-300"
             threshold={235}

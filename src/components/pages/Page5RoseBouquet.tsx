@@ -1,6 +1,7 @@
 import React from 'react';
 import { TransparentCutout } from '../TransparentCutout';
 import { sounds } from '../../utils/sound';
+import roseBouquetImg from '../../assets/images/isolated_rose_bouquet_1791977739709.jpg';
 
 interface Page5Props {
   onNext: () => void;
@@ -50,7 +51,7 @@ export const Page5RoseBouquet: React.FC<Page5Props> = ({ onNext }) => {
           <div className="relative group w-full max-w-[260px] sm:max-w-[320px] aspect-square flex items-center justify-center animate-float">
             {/* Transparent Cutout: Only Bouquet, Zero white background */}
             <TransparentCutout
-              src="/src/assets/images/isolated_rose_bouquet_1791977739709.jpg"
+              src={roseBouquetImg}
               alt="Lush romantic blush pink rose bouquet"
               className="w-full h-full object-contain filter drop-shadow-xl transform group-hover:scale-105 transition-transform duration-500"
               threshold={235}

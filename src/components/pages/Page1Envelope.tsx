@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
 import { sounds } from '../../utils/sound';
+import envelopeImg from '../../assets/images/original_envelope_wax_1791972443498.jpg';
+import smallTeddyImg from '../../assets/images/small_teddy_bear_1791976008160.jpg';
 
 interface Page1Props {
   onNext: () => void;
@@ -63,9 +65,8 @@ export const Page1Envelope: React.FC<Page1Props> = ({ onNext }) => {
           {/* Authentic Envelope Image */}
           <div className="absolute inset-0">
             <img
-              src="/src/assets/images/original_envelope_wax_1791972443498.jpg"
+              src={envelopeImg}
               alt="Authentic luxury milk-rose envelope with gold trim and wax seal"
-              referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-rose-500/5 pointer-events-none" />
@@ -82,9 +83,8 @@ export const Page1Envelope: React.FC<Page1Props> = ({ onNext }) => {
             {/* Small Teddy Bear Image */}
             <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-2 border-amber-300 shadow-md bg-white mb-1.5 shrink-0">
               <img
-                src="/src/assets/images/small_teddy_bear_1791976008160.jpg"
+                src={smallTeddyImg}
                 alt="Cute small baby teddy bear holding a heart"
-                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
             </div>

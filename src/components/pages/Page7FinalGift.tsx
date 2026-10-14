@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import confetti from 'canvas-confetti';
 import { TransparentCutout } from '../TransparentCutout';
 import { sounds } from '../../utils/sound';
+import giftBoxImg from '../../assets/images/birthday_gift_box_1791971664109.jpg';
+import twoBearsChocImg from '../../assets/images/real_two_bears_choc_1791978835972.jpg';
 
 interface Page7Props {
   onRestart: () => void;
@@ -104,9 +106,8 @@ export const Page7FinalGift: React.FC<Page7Props> = ({ onRestart }) => {
               }`}
             >
               <img
-                src="/src/assets/images/birthday_gift_box_1791971664109.jpg"
+                src={giftBoxImg}
                 alt="Illustrated birthday gift box with golden bow"
-                referrerPolicy="no-referrer"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -139,7 +140,7 @@ export const Page7FinalGift: React.FC<Page7Props> = ({ onRestart }) => {
           {/* Realistic Teddy Bears Cutout giving chocolate and gift */}
           <div className="relative w-full max-w-[320px] sm:max-w-[400px] flex flex-col items-center animate-float">
             <TransparentCutout
-              src="/src/assets/images/real_two_bears_choc_1791978835972.jpg"
+              src={twoBearsChocImg}
               alt="Realistic fluffy teddy bears holding chocolate box and gift"
               className="w-full h-full object-contain filter drop-shadow-xl select-none"
               threshold={235}
